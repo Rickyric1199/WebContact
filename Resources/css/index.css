@@ -1,0 +1,51 @@
+#header {
+    padding: 60px;
+    text-align:left;
+    color:ghostwhite;
+    font-size: 70px;
+}
+
+#content {
+    padding: 20px;
+    font-size: 40px;
+    color:midnightblue;
+}
+
+#bar {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#ebar{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#Com{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#Is{
+    font-size: 40px;
+    width: 10%;
+    color:midnightblue;
+}
+
+#Iss{
+    font-size: 20px;
+    width: 15%;
+}
+
+#sub{
+    font-size: 30px;
+    width: 10%;
+    color:darkturquoise;
+}
+

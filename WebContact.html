@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Contact-Form</title>
-</head>
-<body>
-    <nav class="navbar">
-        <ul>
-            <li><a class="blue"href="">Contact-Form</a></li>
-            <form>
+<html lang="en">
+    <head>
+        <title>Contact-Form</title>
+        <link rel="stylesheet" type="text/css" href="./Resources/css/index.css"/>
+    </head>
+    <style>
+    body{
+        background-image: url("./Resources/images/kirby.png");
+        }
+    </style>
+    <body>
+        <div id="header">
+            <h1>Contact-Form</h1>
+        </div>
+        <div id="content">
+            <form action="Page2.html" method="POST">
                 <label for="Uname">User's Name:</label><br>
-                <input type = "text" id="Uname" name="firstname" placeholder="Your name.."><br>
-
+                <input id="bar" type = "text" id="Uname" name="firstname" placeholder="First Name">
+                <input id= "bar" type = "text" id= "Lname" name="lastname" placeholder="Last Name"><br>
                 <label for="email">Email:</label><br>
-                <input type = "text" id="email" email="Email" placeholder="Your email adress.."><br>
+                <input id="ebar" type = "text" id="email" email="Email" placeholder="Your email adress.."><br>
             </form>
-        </ul>
-    </nav>
-    <label for="cars">Issue?</label>
-
-    <select name="Issues" id="Issues">
-        <option value="Query">Query</option>
-        <option value="Feedback">Feedback</option>
-        <option value="Complaint">Complaint</option>
-        <option value="Other">Other</option>
-    </select><br>
-
-    <label for="Comment">Subject</label><br>
-    <textarea id="Comment" name="Comment" placeholder="Write something.." style="height:200px">
-</textarea>
-
-    <input type="submit" value="Submit">
-
-
-</body>
-
-
-
-
-</html>
+        </div>
+        <label id="Is" for="cars">Issue?</label>
+            
+        <select id="Iss" name="Issues">
+            <option value="Query">Query</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Complaint">Complaint</option>
+            <option value="Other">Other</option>            
+        </select><br>
+            
+        <label id="Is" for="Comment">Comment!</label><br>
+        <textarea id="Com" id="Comment" name="Comment" placeholder="Write something.." style="height:200px">
+        </textarea>
+                        
+        <a href="http://www.google.com/">
+            <input id="sub" type="submit" value="Submit">
+        </a>
+        
+    </body>
+    </html>
