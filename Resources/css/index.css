@@ -11,14 +11,21 @@
     color:midnightblue;
 }
 
-#bar {
+#name {
     width: 20%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
 
-#ebar{
+#Lname {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#email{
     width: 40%;
     padding: 12px 20px;
     margin: 8px 0;

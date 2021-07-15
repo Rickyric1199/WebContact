@@ -15,12 +15,12 @@
             <h1>Contact-Form</h1>
         </div>
         <div id="content">
-            <form action="Page2.html" method="POST">
+            <form id="form" method="GET" action="display.html" >
                 <label for="Uname">User's Name:</label><br>
-                <input id="bar" type = "text" id="Uname" name="firstname" placeholder="First Name">
-                <input id= "bar" type = "text" id= "Lname" name="lastname" placeholder="Last Name"><br>
+                <input type = "text" name="name" id="name" placeholder="First Name">
+                <input type = "text" name="Lname" id= "Lname" placeholder="Last Name"><br>
                 <label for="email">Email:</label><br>
-                <input id="ebar" type = "text" id="email" email="Email" placeholder="Your email adress.."><br>
+                <input type = "text" name="email" id="email"  placeholder="Your email adress.."><br>
             </form>
         </div>
         <label id="Is" for="cars">Issue?</label>
@@ -36,9 +36,19 @@
         <textarea id="Com" id="Comment" name="Comment" placeholder="Write something.." style="height:200px">
         </textarea>
                         
-        <a href="http://www.google.com/">
-            <input id="sub" type="submit" value="Submit">
+        <a href="display.html">
+            <input id="sub" type="button" value="Submit" onclick="submitForm()">
         </a>
+        <script>
+            function submitForm() {
+                if (typeof (localStorage) != "undefined") {
+                    localStorage.name = document.getElementById("name").value;
+                    localStorage.Lname = document.getElementById("Lname").value;
+                    localStorage.email = document.getElementById("email").value;
+                }
+                document.getElementById("form").submit();
+            }
+        </script>
         
     </body>
     </html>
