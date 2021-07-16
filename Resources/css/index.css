@@ -32,20 +32,20 @@
     box-sizing: border-box;
 }
 
-#Com{
+#Comment{
     width: 40%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
 
-#Is{
+#com{
     font-size: 40px;
     width: 10%;
     color:midnightblue;
 }
 
-#Iss{
+#Issues{
     font-size: 20px;
     width: 15%;
 }
@@ -55,4 +55,35 @@
     width: 10%;
     color:darkturquoise;
 }
+
+#show {
+    color: azure;
+    font-size: 35px;
+}
+
+#sho {
+    color: azure;
+    font-size: 35px;
+}
+
+#sh {
+    color: azure;
+    font-size: 35px;
+}
+
+#dis {
+    color: cornsilk;
+    font-size: 50px;
+}
+
+#Issu {
+    color: azure;
+    font-size: 35px;
+}
+
+#co {
+    color: azure;
+    font-size: 35px;
+}
+
 

@@ -2,23 +2,28 @@
 <html>
 <head>
     <title>Display</title>
+    <link rel="stylesheet" type="text/css" href="./Resources/css/index.css"/>
 </head>
+<style>
+body{
+    background-image: url("./Resources/images/ocean.jpg");
+    }
+</style>
 <body onload="setData()">
-    <p id="show">
-        Name: <!-- want to display the name here -->
-    </p>
-    <p id="sho">
-        Last Name: 
-    </p>
-    <p id="sh">
-        email:
-    </p>
+    <b id="dis"> Your Name: </b><b id="show">Name</b>
+    <b id="sho">LastName</b><br>
+    <b id="dis">Your Email: </b><b id="sh">email</b><br>
+    <b id="dis">Issue: </b><b id="Issu">issue</b><br>
+    <b id="dis">comments: </b><b id="co">comments</b>
+
     <script>
         function setData() {
             if (typeof (localStorage) != "undefined") {
                 document.getElementById("show").innerHTML = localStorage.name;
                 document.getElementById("sho").innerHTML = localStorage.Lname;
                 document.getElementById("sh").innerHTML = localStorage.email;
+                document.getElementById("Issu").innerHTML = localStorage.issue;
+                document.getElementById("co").innerHTML = localStorage.comment
             }
         }
     </script>

@@ -23,17 +23,17 @@
                 <input type = "text" name="email" id="email"  placeholder="Your email adress.."><br>
             </form>
         </div>
-        <label id="Is" for="cars">Issue?</label>
+        <label id="com" for="cars">Issue?</label>
             
-        <select id="Iss" name="Issues">
+        <select id="Issues" name="Issues">
             <option value="Query">Query</option>
             <option value="Feedback">Feedback</option>
             <option value="Complaint">Complaint</option>
             <option value="Other">Other</option>            
         </select><br>
             
-        <label id="Is" for="Comment">Comment!</label><br>
-        <textarea id="Com" id="Comment" name="Comment" placeholder="Write something.." style="height:200px">
+        <label id="com" for="Comment">Comment!</label><br>
+        <textarea id="Comment" name="Comment" placeholder="Write something.." style="height:200px">
         </textarea>
                         
         <a href="display.html">
@@ -45,6 +45,8 @@
                     localStorage.name = document.getElementById("name").value;
                     localStorage.Lname = document.getElementById("Lname").value;
                     localStorage.email = document.getElementById("email").value;
+                    localStorage.issue = document.getElementById("Issues").value;
+                    localStorage.comment = document.getElementById("Comment").value;
                 }
                 document.getElementById("form").submit();
             }
